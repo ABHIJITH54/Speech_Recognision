@@ -9,7 +9,7 @@ def recognize_speech_from_microphone():
                 print("please speak something")
                 audio=recognizer.listen(source)
                 print("Recognizing")
-                text=recognizer.recognize_google(audio)
+                text=recognizer.recognize_google(audio)   #api google
                 print(f"you said: {text}")
                 # return text
                 if text.lower()=="stop":
